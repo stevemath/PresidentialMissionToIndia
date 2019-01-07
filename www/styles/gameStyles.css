@@ -4174,6 +4174,7 @@ color:white;
     top:-7%;
     height:100%;
     z-index:100;
+    cursor:pointer;
 }
 
 .intro2 .intro-btn-wrapper2 {
@@ -4418,6 +4419,7 @@ border:none !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
     margin-bottom:3px;
+    min-height:5px;
 }
 
 
@@ -4650,7 +4652,9 @@ width:100%;
         font-size: 15px;
     }
 
-
+    .show-credits {
+        top: 40px;
+    }
 }
 
 
@@ -5085,16 +5089,16 @@ width:100%;
 
         .credits-container {
             height: 90%;
-            top: 5%;
+            top: 2%;
             left: 50%;
-            width: 85%;
-            margin-left: -42.5%;
+            width: 95%;
+            margin-left: -47.5%;
             padding: 1%;
         }
 
 
         .credits-container .heading {
-            font-size:1.5em;
+            font-size:1.25em;
         }
 
         #imgCredits {
@@ -5109,8 +5113,12 @@ width:100%;
         }
             #imgCredits li:first-child {
                 
-                font-size: 1.0em !important;
+                font-size: 0.9em !important;
             }
+
+        .imgcred-btns {
+        bottom:-25px;
+        }
 
         .intro2 .scrap-icon {
             position: absolute;

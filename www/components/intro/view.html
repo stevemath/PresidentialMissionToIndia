@@ -60,7 +60,7 @@
 					</div>
 					<div class="divider"></div>
 					<div class="credits-subhead">
-						<em>PresidentialTravel Mission: India</em> is an educational game about India and international diplomacy, by the George Bush Presidential Library.
+						<em>Presidential Travel Mission: India</em> is an educational game about India and international diplomacy, by the George Bush Presidential Library.
 					</div>
 
 					<div class="credits-text">
@@ -104,11 +104,11 @@
 		</div>
 
 	</div>
-	
-	
+
+
 	<div class="intro-panel intro2">
 		<div class="pg-heading">Presidential Travel Mission: India</div>
-		<img class="bubble" src="../../images/system/bushbubble2.png" />
+		<img class="bubble" src="images/system/bushbubble3.png" />
 
 		<div class="text-panel">
 			<div class="disc-bkgrd"></div>
@@ -116,7 +116,7 @@
 			<div class="intro-btn-wrapper2">
 				<div class="red-btn-container intro-button2 ib" data-text="Start Planning" data-fontsize="25" data-width="175" data-height="90"></div>
 			</div>
-			<img class="scrap-icon "src="../../images/system/scrapbookicon.png" />
+			<img class="scrap-icon " src="images/system/scrapbookicon.png" />
 			<div class="txt">
 				Now explore the scrapbook about George and Barbara Bush's 1984 trip to India, or begin planning your own Presidential itinerary!
 
@@ -124,16 +124,16 @@
 
 		</div>
 
-		
+
 	</div>
 
 	<div class="intro-panel intro3">
 		<div class="pg-heading">Presidential Travel Mission: India</div>
 		<div class="intro-btn-wrapper wide">
-			
-				<div class="red-btn-container intro-button ib" data-text="Get Started" data-width="275" data-height="90"></div>
-			</div>
+
+			<div class="red-btn-container intro-button ib" data-text="Get Started" data-width="275" data-height="90"></div>
 		</div>
+	</div>
 
 	<script id="redButtonTemplate" type="text/x-kendo-template">
 		<div class="red-button" style="#=styles#">
@@ -297,24 +297,24 @@
 
 	<script id="creditsTemplate" type="text/x-kendo-template">
 
-			<div class="credits-container">
-				<div class="disc-bkgrd"></div>
-					
-						<div class="inner-content">
-								<div class="heading">IMAGE CREDITS</div>
+		<div class="credits-container">
+			<div class="disc-bkgrd"></div>
 
-								<div id="imgCredits"></div>
+			<div class="inner-content">
+				<div class="heading">IMAGE CREDITS</div>
+
+				<div id="imgCredits"></div>
 
 
-								<div class="imgcred-btns">
-									<div class="red-btn-container close-imgcredits ib" data-text="Continue" data-width="180" data-height="40" data-fontsize="25"></div>
+				<div class="imgcred-btns">
+					<div class="red-btn-container close-imgcredits ib" data-text="Continue" data-width="180" data-height="40" data-fontsize="25"></div>
 
-								</div>
-								
-						
 				</div>
+
+
 			</div>
-		
+		</div>
+
 
 	</script>
 
@@ -351,3 +351,96 @@
 
 	<!-- END_CUSTOM_CODE_login -->
 </div>
+
+<script id="scrapbookTemplate" type="text/x-kendo-template">
+	<div class="scrap-bkgrd">
+		<div class="scrap-edge-top"></div>
+		<div class="scrap-edge-bottom"></div>
+	</div>
+
+	<div class="last-scrap">
+		<div class="msg-bkgrd"></div>
+		<div class="msg">Plan the Presidential Itinerary to unlock more pages!</div>
+	</div>
+	<div id="scrapbookLayout">
+		<div class="sb-advance sb-prev">
+			<img src="images/system/left-arrow.png" />
+		</div>
+
+		<div class="sb-advance sb-next">
+			<img src="images/system/rt-arrow.png" />
+		</div>
+
+		<div class="close-scrapbook-btn">
+			<div class="red-btn-container close-scrap ib small" data-text="Close" data-width="125" data-fontsize="17" data-height="25"></div>
+		</div>
+
+		<div class="title">Trip to India Scrapbook</div>
+		<div class="desc">
+			In May 1984, Vice President George H.W. Bush</br>
+			and Mrs. Bush visited India!
+		</div>
+		<div class="pg-wrapper">
+			<div id="lvScrapPgs"></div>
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+</script>
+
+
+<script id="scrapbookPageTemplate" type="text/x-kendo-template">
+	<div class="sb-page sbpg#=idx#">
+
+
+		#if(heading != ""){#
+		<div class="sb-heading">#=heading#</div>
+		#}#
+
+		#if(imgUrl != undefined && imgUrl != ""){#
+		<img class="sb-img1" src="images/system/scrapbook/#=imgUrl#" />
+		#}#
+
+		#if(imgUrl2 != undefined && imgUrl2 != ""){#
+		<img class="sb-img2" src="images/system/scrapbook/#=imgUrl2#" />
+		#}#
+
+		#if(imgUrl3 != undefined && imgUrl3 != ""){#
+		<img class="sb-img3" src="images/system/scrapbook/#=imgUrl3#" />
+		#}#
+
+		#if(imgUrl4 != undefined && imgUrl4 != ""){#
+		<img class="sb-img4" src="images/system/scrapbook/#=imgUrl4#" />
+		#}#
+
+		#if(imgUrl5 != undefined && imgUrl5 != ""){#
+		<img class="sb-img5" src="images/system/scrapbook/#=imgUrl5#" />
+		#}#
+
+
+		#if(text1 != ""){#
+		<div class="txt1">#=text1#</div>
+		#}#
+
+		#if(text2 != ""){#
+		<div class="txt2">#=text2#</div>
+		#}#
+
+		#if(citation != ""){#
+		<div class="citation">#=citation#</div>
+		#}#
+
+
+
+
+
+	</div>
+</script>
