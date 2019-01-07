@@ -67,10 +67,12 @@ var messages = [
 
 var credits = [
 "India Map Illustrated by Maria Rabinky, (c) 2019 Rabinky Art, LLC",
-    "iStock by Getty Images:",
+    "<span class='bold' > U.S. Embassy New Delhi</span>",
+    "","",
+    "<span class='bold' >iStock by Getty Images:</span>",
     " bpbomb, Dyan_k, manjik, Radiokukka, pilesasmiles, Gilitukha, tinnaporn, Rafal Cichawa, PhonlamaiPhoto, HemantMandot, guenterguni",
-    "",
-    "Wikimedia Commons: ",
+    "","",
+    "<span class='bold' >Wikimedia Commons:</span> ",
    "Bharatahs , A.Savin,  Aaron Schaub,Yathin S Krishnappa, Fitindia, Daderot , Ken Wieland, Chippu Abraham, Ajith Kumar, Vijayakumarblathur, IM3847, Shyamvs78, Cherishsantosh, Indrajit Das, Bhaskaranaidu, Sreehuledamana, Yann Forget, CSIRO, കാക്കര, Marc Shandro, Getsuhas08, Flicka, Jan Bockaert, Paul Hamilton, Karthik Nadar, Antônio Milena, Augustus Binu, Biswarup Ganguly, Ashwin Kumar"
 ];
 

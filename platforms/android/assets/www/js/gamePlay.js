@@ -2299,7 +2299,7 @@ $(star).addClass("faded")
                 data: ds , //data.ds.view(),
                 pageSize:1,
             })
-
+            console.log(dsSbpgs.data());
 
   var sb = $("#lvScrapPgs").kendoMobileListView({
       dataSource: dsSbpgs,

@@ -99,7 +99,7 @@ $(document).ready(function () {
         storageBucket: "",
         messagingSenderId: fbMsgId
     };
-    firebase.initializeApp(config);
+   // firebase.initializeApp(config);
 
          
     audioList.intro = document.getElementById("audio-intro");

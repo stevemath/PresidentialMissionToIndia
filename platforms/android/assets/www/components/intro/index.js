@@ -21,6 +21,13 @@ app.intro = kendo.observable({
             app.intro.resizeIntro();
         });
 
+        $(".intro-panel .scrap-icon").on("click touchend", function () {
+            fadeAudio(currentAudio);
+
+            console.log("get scrapbook");
+            gamePlay.getScrapbook();
+        });
+
         $(".intro1 .red-btn-container").on("click touchend", function () {
            
             if (currentAudio != null && currentAudio.paused == true) {
