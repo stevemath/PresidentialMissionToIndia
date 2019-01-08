@@ -73,7 +73,8 @@ app.intro = kendo.observable({
             });
 
             $(".eduweb-link").on("click touchend", function () {
-                window.open('http://www.eduweb.com', '_blank');
+               // window.open('http://www.eduweb.com', '_blank');
+                cordova.InAppBrowser.open('http://www.eduweb.com', '_blank', 'location=yes');
             });
 
             $(".appstore").on("click touchend", function () {
