@@ -33,14 +33,19 @@
     };
 
     $(document).ready(function () {
-      console.log(window.screen.lockOrientation);
-       console.log(window.screen.orientation.lock);
+
+        screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
+        console.log(screen.lockOrientationUniversal);
+      console.log(screen.lockOrientation);
+       console.log(screen.orientation.lock);
         if (checkSimulator() == false && window.screen.orientation.lock) {
             // orientation.lock("landscape")
           //  window.screen.lockOrientation('landscape');
             console.log("locking");
-            window.screen.orientation.lock('landscape');
+            screen.orientation.lock('landscape');
             console.log("landscape lock");
+            console.log(screen.orientation.type);
+            screen.lockOrientation('landscape');
         }
 
         var navigationShowMoreView = $('#navigation-show-more-view').find('ul'),
