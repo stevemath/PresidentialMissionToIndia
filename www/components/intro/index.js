@@ -87,7 +87,8 @@ app.intro = kendo.observable({
         } else {
 
             $(".gwb").on("click touchend", function () {
-                window.open('https://www.bush41.org', '_system', "location=no");
+               // window.open('https://www.bush41.org', '_system', "location=no");
+                cordova.InAppBrowser.open('https://www.bush41.org', '_blank', 'location=no');
                 
             });
 
