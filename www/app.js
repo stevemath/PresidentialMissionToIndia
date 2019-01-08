@@ -33,11 +33,12 @@
     };
 
     $(document).ready(function () {
-       // console.log(window.screen.lockOrientation);
-        if (checkSimulator() == false && window.screen.lockOrientation) {
+        alert.log(window.screen.lockOrientation);
+        alert.log(window.screen.orientation.lock);
+        if (checkSimulator() == false && window.screen.orientation.lock) {
             // orientation.lock("landscape")
           //  window.screen.lockOrientation('landscape');
-            window.screen.Orientation.lock('landscape');
+            window.screen.orientation.lock('landscape');
         }
 
         var navigationShowMoreView = $('#navigation-show-more-view').find('ul'),
