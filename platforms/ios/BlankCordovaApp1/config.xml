@@ -81,4 +81,7 @@
     <feature name="CDVOrientation">
         <param name="ios-package" value="CDVOrientation" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
 </widget>

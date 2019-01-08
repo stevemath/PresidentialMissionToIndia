@@ -78,4 +78,5 @@
   <plugin name="cordova-plugin-screen-orientation" spec="~3.0.1" />
   <preference name="Orientation" value="landscape" />
   <preference name="Fullscreen" value="True" />
+  <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
 </widget>
