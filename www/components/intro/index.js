@@ -73,8 +73,8 @@ app.intro = kendo.observable({
             });
 
             $(".eduweb-link").on("click touchend", function () {
-               // window.open('http://www.eduweb.com', '_blank');
-                cordova.InAppBrowser.open('http://www.eduweb.com', '_blank', 'location=yes');
+                window.open('http://www.eduweb.com', '_blank');
+               
             });
 
             $(".appstore").on("click touchend", function () {
@@ -91,12 +91,15 @@ app.intro = kendo.observable({
                 
             });
 
-           
+            $(".appstore").hide();
+            $(".googlestore").hide();
 
 
 
             $(".eduweb-link").on("click touchend", function () {
-                window.open('http://www.eduweb.com', '_system', "location=no");
+               // window.open('http://www.eduweb.com', '_system', "location=no");
+                console.log("open inappp browser");
+                cordova.InAppBrowser.open('http://www.eduweb.com', '_blank', 'location=no');
             });
         }
 
