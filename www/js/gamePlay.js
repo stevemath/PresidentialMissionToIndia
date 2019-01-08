@@ -1757,12 +1757,26 @@ if(item){
                 // set events
 
                 $(".save-card").off();
-                $(".save-card").on("click touchend", function () {
+
+                if (isMobile == true) {
+                    console.log("mobile save");
+                    $(".save-card").on("touchend", function () {
+
+                        self.hideBushCard(bCardData, pts);
+                        fadeAudio(currentAudio);
+
+                    })
+
+                } else {
+                $(".save-card").on("click", function () {
 
                     self.hideBushCard(bCardData, pts);
                     fadeAudio(currentAudio);
 
                 })
+
+                }
+              
 
                 $(".bcard-full-container").fadeIn(350);
 
