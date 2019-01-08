@@ -34,7 +34,7 @@
 
     $(document).ready(function () {
       console.log(window.screen.lockOrientation);
-       // alert(window.screen.orientation.lock);
+       console.log(window.screen.orientation.lock);
         if (checkSimulator() == false && window.screen.orientation.lock) {
             // orientation.lock("landscape")
           //  window.screen.lockOrientation('landscape');
