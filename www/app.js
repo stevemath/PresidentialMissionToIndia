@@ -33,8 +33,8 @@
     };
 
     $(document).ready(function () {
-        alert.log(window.screen.lockOrientation);
-        alert.log(window.screen.orientation.lock);
+        alert(window.screen.lockOrientation);
+        alert(window.screen.orientation.lock);
         if (checkSimulator() == false && window.screen.orientation.lock) {
             // orientation.lock("landscape")
           //  window.screen.lockOrientation('landscape');
