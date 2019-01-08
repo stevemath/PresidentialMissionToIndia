@@ -32,9 +32,12 @@
         });
     };
 
-    $(document).ready(function() {
+    $(document).ready(function () {
+       // console.log(window.screen.lockOrientation);
         if (checkSimulator() == false && window.screen.lockOrientation) {
-            window.screen.lockOrientation('landscape');
+            // orientation.lock("landscape")
+          //  window.screen.lockOrientation('landscape');
+            window.screen.Orientation.lock('landscape');
         }
 
         var navigationShowMoreView = $('#navigation-show-more-view').find('ul'),

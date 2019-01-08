@@ -32,7 +32,8 @@
         });
     };
 
-    $(document).ready(function() {
+    $(document).ready(function () {
+       // console.log(window.screen.lockOrientation);
         if (checkSimulator() == false && window.screen.lockOrientation) {
             window.screen.lockOrientation('landscape');
         }

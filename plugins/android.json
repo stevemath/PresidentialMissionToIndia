@@ -1,24 +1,22 @@
 {
-  "prepare_queue": {
-    "installed": [],
-    "uninstalled": []
-  },
-  "config_munge": {
-    "files": {}
-  },
-  "installed_plugins": {
-    "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "io.cordova.myapp83856a"
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
     },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.cordova.myapp83856a"
+    "config_munge": {
+        "files": {}
     },
-    "cordova-plugin-file": {
-      "PACKAGE_NAME": "io.cordova.myapp83856a"
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.myapp83856a"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "io.cordova.myapp4abc81"
+        }
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "io.cordova.myapp83856a"
+    "dependent_plugins": {
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "io.cordova.myapp4abc81"
+        }
     }
-  },
-  "dependent_plugins": {}
 }

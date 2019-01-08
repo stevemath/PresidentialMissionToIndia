@@ -4,16 +4,12 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-        <param name="onload" value="true" />
-    </feature>
-    <allow-navigation href="cdvfile:*" />
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    <feature name="CDVOrientation">
+        <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
     </feature>
     <name>Diplomacy India</name>
-    <description />
+    <description>
+    </description>
     <author email="dave@eduweb.com" href="http://cordova.io">Eduweb</author>
     <vs:template-name>BlankJS</vs:template-name>
     <vs:toolsetVersion>6.3.1</vs:toolsetVersion>
