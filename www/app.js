@@ -41,9 +41,9 @@
             screen.orientation.lock('landscape');
             console.log("landscape lock");
             console.log(screen.orientation.type);
-            alert(screen.orientation.type)
+           // alert(screen.orientation.type)
         } else {
-alert("no screen orientation")
+//alert("no screen orientation")
 
         }
 
