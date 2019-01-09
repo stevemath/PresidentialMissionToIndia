@@ -79,4 +79,7 @@
   <preference name="Fullscreen" value="True" />
   <preference name="deployment-target" value="9" />
   <preference name="BackupWebStorage" value="none" />
+  <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
+  <plugin name="cordova-plugin-screen-orientation" spec="~3.0.1" />
+  <plugin name="es6-promise-plugin" spec="~4.2.2" />
 </widget>

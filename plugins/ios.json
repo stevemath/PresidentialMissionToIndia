@@ -9,6 +9,15 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.myapp83856a"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "diplomacyindia.eduweb"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "diplomacyindia.eduweb"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "diplomacyindia.eduweb"
         }
     },
     "dependent_plugins": {}

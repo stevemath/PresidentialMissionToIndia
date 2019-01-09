@@ -75,4 +75,10 @@
     <preference name="Orientation" value="landscape" />
     <preference name="Fullscreen" value="True" />
     <preference name="deployment-target" value="9" />
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="CDVOrientation">
+        <param name="ios-package" value="CDVOrientation" />
+    </feature>
 </widget>
