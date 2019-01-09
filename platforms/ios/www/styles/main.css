@@ -1,3 +1,19 @@
+body{
+position: absolute;
+width:100%;
+height:100%;
+overflow: hidden !important;
+-webkit-overflow-scrolling: auto;
+}
+        html{
+margin:0;
+padding:0;
+overflow: hidden !important;
+}
+
+
+
+
 #kendoUiMobileApp .block {
     display: block;
     margin: 1em;
@@ -283,7 +299,6 @@ Fields
     -ms-flex-flow: row;
     flex-flow: row;
     -webkit-box-orient: horizontal;
-    height:70px;
 }
 
 #kendoUiMobileApp .km-header .km-rightitem,
@@ -324,7 +339,7 @@ Fields
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    text-align: left;
+    text-align: center;
     display: block;
     -webkit-box-ordinal-group: 1;
     -ms-flex-order: 1;

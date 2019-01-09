@@ -22,14 +22,9 @@
 }
 /* Button */
 .km-nova .km-button {
-    /*color: #888e90;
+  color: #888e90;
   background: #fff;
-  border-color: #888e90;*/
-    background-color: #c9f272;
-    border-radius: 5px;
-    border: none;
-    color:black;
-
+  border-color: #888e90;
 }
 .km-nova .km-button.km-state-active {
   background: #f5f6f6;
@@ -185,9 +180,8 @@
 }
 /* ListView */
 .km-nova .km-list > li {
-  border-color: #404040;
-  /*color: #32364c;*/
-  color:#000 !important;
+  border-color: #dfe1e2;
+  color: #32364c;
 }
 .km-nova .km-list > li.km-load-more {
   border-color: transparent;
@@ -448,13 +442,13 @@
 .km-nova .k-toolbar,
 .km-nova .km-tabstrip,
 .km-nova .km-drawer .km-content {
-    background-image: linear-gradient(to bottom, #2e82f6 0%, #0e62c6 100%);
+  background-image: linear-gradient(to bottom, #2e3246 0%, #242736 100%);
 }
 .km-nova .km-drawer .km-navbar {
   background: #14151e;
 }
 .km-nova .km-tabstrip .km-button.km-state-active {
-    background-image: linear-gradient(to bottom, #2e82f6 0%, #1e82e6 100%);
+  background-image: linear-gradient(to bottom, #1e202d 0%, #14151e 100%);
 }
 .km-nova #navigation-container .active,
 .km-nova .km-drawer .km-listview li.km-state-active {

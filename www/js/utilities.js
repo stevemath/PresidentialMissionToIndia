@@ -225,9 +225,10 @@ document.addEventListener("visibilitychange", handleVisibilityChange, false);
 
 
 function onDeviceReady() {
-   
+    
     document.addEventListener("pause", onPause, false);
     document.addEventListener("resume", onResume, false);
+    alert("device ready")
 }
 function onPause() {
    

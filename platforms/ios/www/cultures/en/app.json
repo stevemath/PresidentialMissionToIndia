@@ -5,19 +5,9 @@
     "qrCodeScan": "Scan"
   },
   "home": {
-    "title": "Home"
+    "title": "Diplomacy Demo"
   },
-
   "login": {
-    "title": "Sign In"
-  },
-  "transactions": {
-    "title": "Transactions",
-    "strTotal": "Total"
-  },
-  "editTransactions": {
-    "title": "Add/Edit Transactions"
+    "title": "User Login"
   }
-
-
 }

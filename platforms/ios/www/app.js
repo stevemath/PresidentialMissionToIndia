@@ -19,58 +19,49 @@
     };
 
     var bootstrap = function() {
-        $(function () {
-            console.log("bootstrap")
+        $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'slide',
                 skin: 'nova',
-                initial: 'components/login/view.html',
-                init: app.autoSignin
+                initial: 'components/intro/view.html',
+                useNativeScrolling: true,
+                hideAddressBar: true,
             });
 
-           // kendo.bind($('.navigation-link-text'), app.navigation.viewModel);
-
-            
-
+            kendo.bind($('.navigation-link-text'), app.navigation.viewModel);
         });
     };
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
-       // var navigationShowMoreView = $('#navigation-show-more-view').find('ul'),
-        //    allItems = $('#navigation-container-more').find('a'),
-        //    navigationShowMoreContent = '';
-
-        //    allItems.each(function(index) {
-        //        navigationShowMoreContent += '<li>' + allItems[index].outerHTML + '</li>';
-        //    });
-
-        //     navigationShowMoreView.html(navigationShowMoreContent);
-        //kendo.bind($('#navigation-show-more-view'), app.showMore.viewModel);
-
-        app.notification = $("#notify");
-      
-    });
-
-
-    app.autoSignin = function () {
-        localStorage.autoLogin = 'true';
        
-        if (localStorage.autoLogin == "true" && localStorage.authToken  && localStorage.uid ) {
-            app.login.getData(localStorage.authToken, localStorage.uid)
-        } else {
-            app.mobileApp.navigate("components/login/view.html");
+        if (checkSimulator() == false && window.screen.orientation.lock) {
+            
+            console.log("locking");
+            screen.orientation.lock('landscape');
+            console.log("landscape lock");
+            console.log(screen.orientation.type);
+            alert(screen.orientation.type) 
         }
 
-    }
+        var navigationShowMoreView = $('#navigation-show-more-view').find('ul'),
+            allItems = $('#navigation-container-more').find('a'),
+            navigationShowMoreContent = '';
 
-    app.clearLogin = function () {
+        allItems.each(function(index) {
+            navigationShowMoreContent += '<li>' + allItems[index].outerHTML + '</li>';
+        });
 
-        localStorage.authToken = "";
-        localStorage.uid = "";
-        localStorage.autoLogin = 'false';
+        navigationShowMoreView.html(navigationShowMoreContent);
+        kendo.bind($('#navigation-show-more-view'), app.showMore.viewModel);
 
-    }
+        app.notification = $("#notify");
+
+       
+
+    });
+
+   
 
     app.listViewClick = function _listViewClick(item) {
         var tabstrip = app.mobileApp.view().footer.find('.km-tabstrip').data('kendoMobileTabStrip');
@@ -84,20 +75,13 @@
     };
 
     if (window.cordova) {
-        document.addEventListener('deviceready', function () {
-           // alert("device ready")
-           // if (navigator.camera) {
-               // alert("camera found")
-           // } else {
-                //alert(navigator.camera)
-                //alert(navigator.geolocation)
-            //}
-
-
-        
+        document.addEventListener('deviceready', function() {
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
             }
+            screen.orientation.lock('landscape');
+            console.log("device landscape lock");
+            alert("device landscape lock")
             bootstrap();
         }, false);
     } else {
@@ -238,13 +222,7 @@
     }
 
     localization.set('currentCulture', localization.defaultCulture);
-   
 })(window.app);
-var navTo = function (viewName) {
-
-    app.mobileApp.navigate("components/" + viewName + "/view.html")
-
-}
 /// end app modules
 
 // START_CUSTOM_CODE_kendoUiMobileApp

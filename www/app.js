@@ -41,7 +41,7 @@
             screen.orientation.lock('landscape');
             console.log("landscape lock");
             console.log(screen.orientation.type);
-            
+            alert(screen.orientation.type) 
         }
 
         var navigationShowMoreView = $('#navigation-show-more-view').find('ul'),
@@ -81,7 +81,7 @@
             }
             screen.orientation.lock('landscape');
             console.log("device landscape lock");
-
+            alert("device landscape lock")
             bootstrap();
         }, false);
     } else {
