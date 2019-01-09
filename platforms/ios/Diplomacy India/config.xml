@@ -80,4 +80,5 @@
     <preference name="windows-target-version" value="10.0" />
     <preference name="Orientation" value="landscape" />
     <preference name="Fullscreen" value="True" />
+    <preference name="deployment-target" value="9" />
 </widget>

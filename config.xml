@@ -72,8 +72,8 @@
     <splash height="960" platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" />
     <splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
   </platform>
-  <engine name="android" spec="5.2.1" />
-  <engine name="ios" spec="4.2.0" />
+  <engine name="android" spec="~5.2.1" />
+  <engine name="ios" spec="~4.0.0" />
   <engine name="windows" spec="4.4.2" />
   <plugin name="cordova-plugin-screen-orientation" spec="~3.0.1" />
   <preference name="Orientation" value="landscape" />
@@ -81,4 +81,5 @@
   <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
   <plugin name="es6-promise-plugin" spec="~4.2.2" />
   <preference name="deployment-target" value="9" />
+  <preference name="BackupWebStorage" value="none" />
 </widget>
