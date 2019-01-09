@@ -72,6 +72,6 @@
     <splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
   </platform>
   <engine name="android" spec="^6.1.2" />
-  <engine name="ios" spec="4.3.1" />
+  <engine name="ios" spec="4.4.0" />
   <engine name="windows" spec="4.4.3" />
 </widget>
