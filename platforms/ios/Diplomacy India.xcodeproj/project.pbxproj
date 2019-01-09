@@ -19,8 +19,6 @@
 		D0C934F4B6F54DF982809E00 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0968C9DFDB4251B0669EAB /* CoreLocation.framework */; };
 		9D0C4F67E8D049908490569F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DE7269AD174F78B2A9B4AE /* AVFoundation.framework */; };
 		6F684D35441A41F18E2FE505 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4457B58BD64447B8AA5F5BA5 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		1FE8035ACF17473DB13EDBF2 /* CDVOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1493273722A742D49371492C /* CDVOrientation.m */; };
-		6CA1B4742C4B4A108EAC6496 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C7E7F5E8AE48D3A568A9B9 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +62,6 @@
 		8E0968C9DFDB4251B0669EAB /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		23DE7269AD174F78B2A9B4AE /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		4457B58BD64447B8AA5F5BA5 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		1493273722A742D49371492C /* CDVOrientation.m */ = {isa = PBXFileReference; name = "CDVOrientation.m"; path = "cordova-plugin-screen-orientation/CDVOrientation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		88F0A185700E4DC1BF300B71 /* CDVOrientation.h */ = {isa = PBXFileReference; name = "CDVOrientation.h"; path = "cordova-plugin-screen-orientation/CDVOrientation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		32C7E7F5E8AE48D3A568A9B9 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		A49D17F32E874FBA95DDB272 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,10 +172,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				1493273722A742D49371492C /* CDVOrientation.m */,
-				88F0A185700E4DC1BF300B71 /* CDVOrientation.h */,
-				32C7E7F5E8AE48D3A568A9B9 /* CDVInAppBrowser.m */,
-				A49D17F32E874FBA95DDB272 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = "Diplomacy India/Plugins";
@@ -293,8 +283,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				1FE8035ACF17473DB13EDBF2 /* CDVOrientation.m in Sources */,
-				6CA1B4742C4B4A108EAC6496 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

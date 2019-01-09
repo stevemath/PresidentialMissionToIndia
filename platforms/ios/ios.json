@@ -7,16 +7,7 @@
         "files": {
             "config.xml": {
                 "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"CDVOrientation\"><param name=\"ios-package\" value=\"CDVOrientation\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
-                            "count": 1
-                        }
-                    ]
+                    "/*": []
                 }
             },
             "*-Info.plist": {
@@ -31,37 +22,11 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.myapp83856a"
-        },
-        "cordova-plugin-screen-orientation": {
-            "PACKAGE_NAME": "io.cordova.myapp83856a"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "io.cordova.myapp83856a"
         }
     },
     "dependent_plugins": {},
-    "modules": [
-        {
-            "id": "cordova-plugin-screen-orientation.screenorientation",
-            "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
-            "pluginId": "cordova-plugin-screen-orientation",
-            "clobbers": [
-                "cordova.plugins.screenorientation"
-            ]
-        },
-        {
-            "id": "cordova-plugin-inappbrowser.inappbrowser",
-            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-            "pluginId": "cordova-plugin-inappbrowser",
-            "clobbers": [
-                "cordova.InAppBrowser.open",
-                "window.open"
-            ]
-        }
-    ],
+    "modules": [],
     "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.2.2",
-        "cordova-plugin-screen-orientation": "3.0.1",
-        "cordova-plugin-inappbrowser": "3.0.0"
+        "cordova-plugin-whitelist": "1.2.2"
     }
 }
