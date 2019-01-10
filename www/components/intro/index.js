@@ -8,7 +8,7 @@ app.intro = kendo.observable({
        
 
         //function onLoad() {
-            alert("loaded")
+           // alert("loaded")
             document.addEventListener("deviceready", onDeviceReady, false);
         //}
 

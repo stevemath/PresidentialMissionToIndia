@@ -33,15 +33,18 @@
     };
 
     $(document).ready(function () {
-
+        console.log("doc ready");
        
         if (checkSimulator() == false && window.screen.orientation.lock) {
-            
+
             console.log("locking");
             screen.orientation.lock('landscape');
             console.log("landscape lock");
             console.log(screen.orientation.type);
-            alert(screen.orientation.type) 
+           // alert(screen.orientation.type)
+        } else {
+//alert("no screen orientation")
+
         }
 
         var navigationShowMoreView = $('#navigation-show-more-view').find('ul'),
@@ -79,9 +82,10 @@
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
             }
-            screen.orientation.lock('landscape');
-            console.log("device landscape lock");
-            alert("device landscape lock")
+            alert("dev ready")
+            //screen.orientation.lock('landscape');
+            //console.log("device landscape lock");
+            //alert("device landscape lock")
             bootstrap();
         }, false);
     } else {

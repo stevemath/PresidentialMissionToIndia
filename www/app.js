@@ -33,7 +33,7 @@
     };
 
     $(document).ready(function () {
-
+        console.log("doc ready");
        
         if (checkSimulator() == false && window.screen.orientation.lock) {
 

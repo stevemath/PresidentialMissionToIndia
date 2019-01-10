@@ -225,10 +225,10 @@ document.addEventListener("visibilitychange", handleVisibilityChange, false);
 
 
 function onDeviceReady() {
-    
+    console.log("device ready");
     document.addEventListener("pause", onPause, false);
     document.addEventListener("resume", onResume, false);
-    alert("device ready")
+   // alert("device ready")
 }
 function onPause() {
    
