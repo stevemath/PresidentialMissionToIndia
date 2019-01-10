@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\www"
+    "\\www",
+    "\\www\\js"
   ],
+  "SelectedNode": "\\www\\config.xml",
   "PreviewInSolutionExplorer": false
 }
