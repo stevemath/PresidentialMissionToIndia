@@ -12,8 +12,9 @@ app.intro = kendo.observable({
             document.addEventListener("deviceready", onDeviceReady, false);
         //}
 
-        app.intro.resizeIntro();
-        playAudio(audioList.intro)
+            app.intro.resizeIntro();
+        // reset after testing
+        //playAudio(audioList.intro)
         gamePlay.renderRedButtons();
 
         $(window).on("resize", function () {
